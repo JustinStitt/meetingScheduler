@@ -38,10 +38,12 @@ Schedule::Schedule(matrix<string> _sched, vector<string> _busy)
 
 	matrix<int> conv_to_int = matrix_string_to_int(this->sched);
 	print_sched(this->sched);
-	/*cout << "Availability: " << endl;
+	cout << "My Availability! : " << endl;
 	matrix<int> avail = calculate_availability(conv_to_int);
 	matrix<string> avail_string = matrix_int_to_string(avail);
-	print_sched(avail_string);*/
+	print_sched(avail_string);
+	cout << string(50, '=') << endl;
+
 	//matrix<int> converted_to_int = matrix_string_to_int(this->sched);
 	//print_sched(converted_to_int);
 	//matrix<string> converted_to_string = matrix_int_to_string(converted_to_int);
@@ -149,7 +151,11 @@ matrix<string> Schedule::compare_schedules(Schedule& s2, int duration)
 		{
 			int rhs_s = rhs[y][0];
 			int rhs_e = rhs[y][1];
-			if (in_range(lhs_s, rhs[y]))
+			if (in_range(lhs_s, rhs[y]) && in_range(lhs_e, rhs[y]) )
+			{
+				common.push_back({lhs_s,lhs_e - duration});
+			}
+			else if (in_range(lhs_s, rhs[y]))
 			{//if the left hand cursor is in the range of s2's available time slots
 				if (lhs_s + duration <= rhs_e)
 					common.push_back({ lhs_s,rhs_e - duration });
