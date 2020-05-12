@@ -44,12 +44,6 @@ Schedule::Schedule(matrix<string> _sched, vector<string> _busy)
 	print_sched(avail_string);
 	cout << string(50, '=') << endl;
 
-	//matrix<int> converted_to_int = matrix_string_to_int(this->sched);
-	//print_sched(converted_to_int);
-	//matrix<string> converted_to_string = matrix_int_to_string(converted_to_int);
-	//print_sched(converted_to_string);
-	//matrix<int> round_two = matrix_string_to_int(converted_to_string);
-	//print_sched(round_two);
 }
 
 int Schedule::time_string_to_int(string time)
