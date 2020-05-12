@@ -8,4 +8,4 @@ Their schedules then consist of other meetings or activities they may have going
 
 Finally, given the parameter of "meeting duration" my program provides the range of times in which you can START the meeting and finish whilst being in the availability of BOTH party's schedules.
 
-![](meetingSchedulerGHimg1.png)
+![](meetingSchedulerGHimg.png)
