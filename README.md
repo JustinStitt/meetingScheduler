@@ -12,4 +12,5 @@ Finally, given the parameter of "meeting duration" my program provides the range
 
 
 **Example with meeting duration of 30 minutes
+
 ![](meetingSchedulerGHimg.png)
