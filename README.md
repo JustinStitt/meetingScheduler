@@ -11,6 +11,6 @@ My program then calculates their available times and cross-references this with 
 Finally, given the parameter of "meeting duration" my program provides the range of times in which you can START the meeting and finish whilst being in the availability of BOTH party's schedules.
 
 
-**Example with meeting duration of 30 minutes
+**Example with meeting duration of 30 minutes**
 
 ![](meetingSchedulerGHimg.png)
